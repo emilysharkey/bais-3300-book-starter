@@ -56,7 +56,7 @@ def add():
     else:
         return redirect(url_for("index"))
     
-@app.route("/", methods=["GET", "POST"])
+@app.route("/about", methods=["GET", "POST"])
 def about():
     return render_template(
         "about.html", pageTitle="About", books=all_books_dict)
