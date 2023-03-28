@@ -1,4 +1,4 @@
-# bais-3300-book-starter
+# BAIS-3300-book-starter
 
 Developers: Emily Sharkey, Karsen Noble, Anna Reser
 
