@@ -1,0 +1,136 @@
+
+<h2>Add a book to my library</h2>
+<hr />
+<main>
+  <form action="/add" method="POST">
+    <p>
+      <label for="Title">Title:</label>
+      <input type="text" id="Title" name="Title" />
+    </p>
+    <p>
+      <label for="Author">Author:</label>
+      <input type="text" id="Author" name="Author" />
+    </p>
+    <p>
+      <label for="Pages">Pages:</label>
+      <input type="text" id="Pages" name="Pages" />
+
+    </p>
+    <p>
+      <label>Classification:</label>
+      <label for="genre">
+        <input
+          type="radio"
+          id="genre"
+          name="genre"
+          value="fiction"
+          required="required"
+        />
+        fiction
+      </label>
+
+      <label for="genre">
+        <input
+          type="radio"
+          id="genre"
+          name="genre"
+          value="non-fiction"
+          required="required"
+        />
+        non-fiction
+      </label>
+    </p>
+
+    <fieldset>
+      <legend>Details:</legend>
+      <p>
+      <label for="book">
+        <input
+          type="checkbox"
+          id="book"
+          name="book"
+          value="I own this book"
+        />
+        I own this book
+      </label>
+    </p>
+    <p>
+      <label for="book">
+        <input
+          type="checkbox"
+          id="book"
+          name="book"
+          value="I've read this book"
+        />
+        I've read this book
+      </label>
+    </p>
+    <p>
+      <label for="book">
+        <input
+          type="checkbox"
+          id="book"
+          name="book"
+          value="I liked this book"
+        />
+        I liked this book
+      </label>
+    </p>
+    <p>
+      <label for="book">
+        <input
+          type="checkbox"
+          id="book"
+          name="book"
+          value="I would recommend this book to others"
+        />
+        I would recommend this book to others
+      </label>
+    </p>
+    </fieldset>
+
+    <p>
+      <label for="how">
+        How did I get this book?
+        <select name="Acqusition" id="how" required>
+          <option value="" selected>- Select option -</option>
+          <option value="I purchased it.">I purchased it.</option>
+          <option value="It was a gift.">It was a gift.</option>
+          <option value="I checked it out from the library.">I checked it out from the library.</option>
+          <option value="A friend loaned it to me.">A friend loaned it to me.</option>"
+        </select>
+      </label>
+    </p>
+
+    <p><input type="submit" id="Add Book" value="Add Book" /></p>
+  </form>
+
+  <br /><br />
+  
+  <h2>List of books</h2>
+  <hr />
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Pages</th>
+        <th>Classification</th>
+        <th>Details</th>
+        <th>Acqusition</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>{{ Title }}</td>
+        <td>{{ Author }}</td>
+        <td>{{ Pages }}</td>
+        <td>{{ Genre }}</td>
+        <td>{{ Book }}</td>
+        <td>{{ How }}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</main>
