@@ -14,8 +14,8 @@ def index():
         "index.html", pageTitle="Add a book to my library", books=all_books_dict)
 
 
-@app.route("/", methods=["POST"])
-def homepage():
+@app.route("/add", methods=["POST"])
+def add():
     print("inside add function")
     if request.method == "POST":
 
@@ -26,14 +26,14 @@ def homepage():
         Pages = form["Pages"]
         Classification = form["Classification"]
         Details = form.getlist["Details"]
-        Acquistion = form["Acquistion"] #this is a Python list 
+        Acquisition = form["Acquisition"] #this is a Python list 
 
         print(Title)
         print(Author)
         print(Pages)
         print(Classification)
         print (Details)
-        print(Acquistion)
+        print(Acquisition)
 
 
         details_string = ", ".join(Details)  # make the Python list into a string
@@ -44,7 +44,7 @@ def homepage():
             "Pages": Pages,
             "Classification": Classification,
             "Details": details_string,
-            "Acqusition": Acquistion,
+            "Acquisition": Acquisition,
         }
 
         print(book_dict)
@@ -59,7 +59,7 @@ def homepage():
 @app.route("/", methods=["GET", "POST"])
 def about():
     return render_template(
-        "about.html", pageTitle="About Us", books=all_books_dict)
+        "about.html", pageTitle="About", books=all_books_dict)
 
 
 if __name__ == "__main__":
