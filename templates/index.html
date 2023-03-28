@@ -15,7 +15,9 @@
   </head>
 
   <body>
+    {% block body %}
     <nav><a href="/">Home</a> | <a href ="/about">About</a></nav>
+    {% endblock %}
   </body>
 </html>
 <h2>Add a book to my library</h2>
@@ -109,9 +111,9 @@
     </fieldset>
 
     <p>
-      <label for="Acqusition">
+      <label for="Acquisition">
         How did I get this book?
-        <select name="Acqusition" id="how" required>
+        <select name="Acquisition" id="how" required>
           <option value="" selected>- Select option -</option>
           <option value="I purchased it.">I purchased it.</option>
           <option value="It was a gift.">It was a gift.</option>
@@ -125,7 +127,7 @@
   </form>
 
   <br /><br />
-  
+  {% if books %}
   <h2>List of books</h2>
   <hr />
   <table border="1">
@@ -136,20 +138,23 @@
         <th>Pages</th>
         <th>Classification</th>
         <th>Details</th>
-        <th>Acqusition</th>
+        <th>Acquisition</th>
       </tr>
     </thead>
 
     <tbody>
+      {% for book in books %}
       <tr>
-        <td>{{ Title }}</td>
-        <td>{{ Author }}</td>
-        <td>{{ Pages }}</td>
-        <td>{{ Classification }}</td>
-        <td>{{ Details }}</td>
-        <td>{{ Acqusition }}</td>
+        <td>{{ book.Title }}</td>
+        <td>{{ book.Author }}</td>
+        <td>{{ book.Pages }}</td>
+        <td>{{ book.Classification }}</td>
+        <td>{{ book.Details }}</td>
+        <td>{{ book.Acquisition }}</td>
       </tr>
-
+        {% endfor %}
+      
     </tbody>
   </table>
+  {% endif %}
 </main>
