@@ -25,8 +25,8 @@ def homepage():
         Author = form["Author"]
         Pages = form["Pages"]
         Classification = form["genre"]
-        Details = form["book"]
-        Acquistion = form.getlist("how") #this is a Python list 
+        Details = form.getlist["book"]
+        Acquistion = form["how"] #this is a Python list 
 
         print(Title)
         print(Author)
@@ -36,15 +36,15 @@ def homepage():
         print(Acquistion)
 
 
-        acquisition_string = ", ".join(Acquistion)  # make the Python list into a string
+        details_string = ", ".join(Details)  # make the Python list into a string
 
         book_dict = {
             "Title": Title,
             "Author": Author,
             "Pages": Pages,
             "Classification": Classification,
-            "Details": Details,
-            "Acqusition": acquisition_string
+            "Details": details_string,
+            "Acqusition": Acquistion,
         }
 
         print(book_dict)
