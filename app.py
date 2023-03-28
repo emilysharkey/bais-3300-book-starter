@@ -24,9 +24,9 @@ def homepage():
         Title = form["Title"]
         Author = form["Author"]
         Pages = form["Pages"]
-        Classification = form["genre"]
-        Details = form.getlist["book"]
-        Acquistion = form["how"] #this is a Python list 
+        Classification = form["Classification"]
+        Details = form.getlist["Details"]
+        Acquistion = form["Acquistion"] #this is a Python list 
 
         print(Title)
         print(Author)
