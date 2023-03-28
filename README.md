@@ -13,18 +13,18 @@ Basic structure for starting a Flask web form project with Jinja templates
 4. Delete my repository folder from your computer
 
 5. Create a new virtual environment
-      Windows: python -m venv ./venv
-      Mac: python3 -m venv ./venv
+      - Windows: python -m venv ./venv
+      - Mac: python3 -m venv ./venv
       
 6. Activate the new virtual environment
-      Windows: .\venv\Scripts\activate
-      Mac: source ./venv/bin/activate
+      - Windows: .\venv\Scripts\activate
+      - Mac: source ./venv/bin/activate
       
 7. Install the dependencies pip install -r requirements.txt
 
 8. Run the program using either:
-      flask run
-      python app.py
+      - flask run
+      - python app.py
       
 9. Test the application by visiting it in your web browser
 
