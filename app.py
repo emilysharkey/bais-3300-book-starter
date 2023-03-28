@@ -25,7 +25,7 @@ def add():
         Author = form["Author"]
         Pages = form["Pages"]
         Classification = form["Classification"]
-        Details = form.getlist["Details"]
+        Details = form.getlist("Details")
         Acquisition = form["Acquisition"] #this is a Python list 
 
         print(Title)
