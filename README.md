@@ -33,9 +33,9 @@ We completed this project as part of Digital Product Management class. To learn 
 ## TO-DO  
 Features to be added.  
 
--[x] Catch all selected activities in /add and put them into the list
--[x] About Page
--[ ] Styling using Bootstrap 5 framework 
--[ ] Custom error messages 
--[ ] Flash messages 
--[ ] API
+-[x] Catch all selected activities in /add and put them into the list  
+-[x] About Page  
+-[ ] Styling using Bootstrap 5 framework   
+-[ ] Custom error messages   
+-[ ] Flash messages   
+-[ ] API  
