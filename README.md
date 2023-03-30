@@ -8,6 +8,8 @@ Basic Python Flask web applications where users can track books they've own and 
 
 We completed this project as part of Digital Product Management class. To learn about dynamic web applications, user experience, and user interfaces.  
 
+
+![Library application homepage](library.jpg "Library homepage")
 ---
 
 ## Instruction to run the application 
