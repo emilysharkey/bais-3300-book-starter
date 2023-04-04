@@ -1,5 +1,4 @@
 # Library of books 
-C:\Users\emily\OneDrive\Documents\python
 
 Developers: Emily Sharkey, Karsen Noble, Anna Reser
 
