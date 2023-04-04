@@ -37,7 +37,7 @@ Features to be added.
 
 -[x] Catch all selected activities in /add and put them into the list  
 -[x] About Page  
--[ ] Styling using Bootstrap 5 framework   
--[ ] Custom error messages   
--[ ] Flash messages   
+-[x] Styling using Bootstrap 5 framework   
+-[x] Custom error messages   
+-[x] Flash messages   
 -[ ] API  
